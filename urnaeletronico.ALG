@@ -1,4 +1,4 @@
-Algoritmo "URNA LETRONICO"
+ Algoritmo "URNA LETRONICO"
 // Disciplina   : [Desenvolviemnto de aplicativos]
 // Professor   : Erivaldo carvalho
 // Descrição   : Este
@@ -17,7 +17,7 @@ conte2 :          inteiro
 conte3 :          inteiro
 contebranco:      inteiro
 contenulo:        inteiro
-resposta:          inteiro
+resposta:         inteiro
 i:                inteiro
 voto:             inteiro
 
@@ -58,7 +58,7 @@ Inicio
  escreval("")
  escreval("Inicando a eleição.")
  
- timer (5)
+ timer (500)
  
  para i de 0 ate 10  passo 1 faca
  escreval(".")
