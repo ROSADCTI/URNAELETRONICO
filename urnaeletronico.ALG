@@ -52,7 +52,7 @@ Inicio
  escreval(numerocandidato1, " - ", nomeCandidato1,":",conte1)
  escreval(numerocandidato2, " - ", nomeCandidato2,":",conte2)
  escreval(numerocandidato3, " - ", nomeCandidato3,":",conte3)
- escreval("0 branco:",conteBranco)
+ escreval("0 branco:",contebranco)
  escreval("voto nulos:",contenulo)
  
  escreval("")
@@ -73,6 +73,7 @@ Inicio
        escreval(numeroCandidato2, " - ", nomeCandidato2)
        escreval(numeroCandidato3, " - ", nomeCandidato3)
        escreval(" 0 - Branco:")
+       escreval(" 1 - Nulo:")
        escreval(" ")
        
        escreval(" Informe o numero do candidato: ")
