@@ -61,7 +61,7 @@ Inicio
  timer (500)
  
  para i de 0 ate 10  passo 1 faca
- escreval(".")
+ escreva(".")
  fimpara
  timer(0)
 
