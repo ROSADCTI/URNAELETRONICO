@@ -67,7 +67,7 @@ Inicio
 
  limpatela
  repita
-       repita
+
        limpatela
        escreval(numeroCandidato1, " - ", nomeCandidato1)
        escreval(numeroCandidato2, " - ", nomeCandidato2)
