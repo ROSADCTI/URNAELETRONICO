@@ -21,8 +21,6 @@ resposta:         caracter
 i:                inteiro
 voto:             inteiro
 
-
-
 Inicio
 
    limpatela
@@ -52,8 +50,8 @@ Inicio
  escreval(numerocandidato1, " - ", nomeCandidato1,":",conte1)
  escreval(numerocandidato2, " - ", nomeCandidato2,":",conte2)
  escreval(numerocandidato3, " - ", nomeCandidato3,":",conte3)
- escreval("0 branco:",contebranco)
- escreval("voto nulos:",contenulo)
+ escreval(" Branco:",contebranco)
+ escreval(" Voto nulos:",contenulo)
 
  escreval("")
  escreval("Inicando a eleição.")
@@ -80,8 +78,7 @@ Inicio
        leia(voto)
        escreval(" ")
 
-
-    escolha voto
+     escolha voto
 
        caso numeroCandidato1
        escreval(numeroCandidato1, " - ", nomeCandidato1)
@@ -95,15 +92,34 @@ Inicio
           escreval(" voto em nulo")
     fimescolha
 
-    escreva(" ")
+    escreval("")
     escreva("Deseja confirma o seu voto? (s) ou (n)")
     leia(resposta)
     ate(resposta = "s")
+    
+     escolha voto
 
+       caso numeroCandidato1
+       conte1 <- conte1+1
+       caso numerocandidato2
+       conte2 <- conte2 +1
+       caso numerocandidato3
+       conte3 <- conte3+1
+         caso 0
+         contebranco  <- contebranco + 1
+         outrocaso
+          contenulo <- contenulo + 1
+    fimescolha
+      escreval("")
     escreva("Ainda possui Eleitor para votar? (s)ou(n): ")
     leia(resposta)
     ate(resposta = "n")
-
-
+       escreval("")
+    escreval("************Boletim de Urna********")
+ escreval(numerocandidato1, " - ", nomeCandidato1,":",conte1)
+ escreval(numerocandidato2, " - ", nomeCandidato2,":",conte2)
+ escreval(numerocandidato3, " - ", nomeCandidato3,":",conte3)
+ escreval("0 branco:",contebranco)
+ escreval("voto nulos:",contenulo)
 
 Fimalgoritmo
