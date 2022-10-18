@@ -1,4 +1,4 @@
- Algoritmo "URNA LETRONICO"
+ Algoritmo "URNA ELETRONICO"
 // Disciplina   : [Desenvolviemnto de aplicativos]
 // Professor   : Erivaldo carvalho
 // Descrição   : Este
