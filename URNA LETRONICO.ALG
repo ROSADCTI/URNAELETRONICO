@@ -1,11 +1,11 @@
  Algoritmo "URNA LETRONICO"
 // Disciplina   : [Desenvolviemnto de aplicativos]
 // Professor   : Erivaldo carvalho
-// Descrição   :
+// Descrição   : Este
 // Autor(a)    : ROSILENE D.C
 // Data atual  : 10/10/2022
 Var
-// Seção de Declarações das variáveis 
+// Seção de Declarações das variáveis
 numerocandidato1: inteiro
 numeroCandidato2: inteiro
 numeroCandidato3: inteiro
@@ -33,7 +33,7 @@ Inicio
   leia(nomecandidato1)
 
     limpatela
- 
+
  escreva("Informe o número do canditato 2: ")
  leia(numeroCandidato2)
    escreva("Informa nome do candidato 2: ")
@@ -47,58 +47,60 @@ Inicio
    leia(nomeCandidato3)
 
     limpatela
- 
+
  escreval("************ZEREZIMA********")
  escreval(numerocandidato1, " - ", nomeCandidato1,":",conte1)
  escreval(numerocandidato2, " - ", nomeCandidato2,":",conte2)
  escreval(numerocandidato3, " - ", nomeCandidato3,":",conte3)
- escreval("0 branco:",conteBranco)
+ escreval("0 branco:",contebranco)
  escreval("voto nulos:",contenulo)
- 
+
  escreval("")
  escreval("Inicando a eleição.")
- 
+
  timer (500)
- 
+
  para i de 0 ate 10  passo 1 faca
- escreval(".")
+ escreva(".")
  fimpara
  timer(0)
 
  limpatela
  repita
-       repita
+        repita
        limpatela
        escreval(numeroCandidato1, " - ", nomeCandidato1)
        escreval(numeroCandidato2, " - ", nomeCandidato2)
        escreval(numeroCandidato3, " - ", nomeCandidato3)
        escreval(" 0 - Branco:")
+       escreval(" 1 - Nulo:")
        escreval(" ")
-       
+
        escreval(" Informe o numero do candidato: ")
        leia(voto)
        escreval(" ")
-       escreva("Deseja confirma o seu voto? (s) ou (n)")
-       leia(resposta)
-       ate(resposta <> "s")
-       
+
+
     escolha voto
 
- caso numeroCandidato1
- escreval(numeroCandidato1, " - ", nomeCandidato1)
- caso numerocandidato2
- escreval(numeroCandidato2, " - ", nomeCandidato2)
- caso numerocandidato3
- escreval(numeroCandidato3, " - ", nomeCandidato3)
-   caso 0
-   escreval("0 - voto em branco")
-   outrocaso
-    escreval("voto em nulo")
+       caso numeroCandidato1
+       escreval(numeroCandidato1, " - ", nomeCandidato1)
+       caso numerocandidato2
+       escreval(numeroCandidato2, " - ", nomeCandidato2)
+       caso numerocandidato3
+       escreval(numeroCandidato3, " - ", nomeCandidato3)
+         caso 0
+         escreval("0 - voto em branco")
+         outrocaso
+          escreval("voto em nulo")
     fimescolha
-    
+
     escreva(" ")
     escreva("Deseja confirma o seu voto? (s) ou (n)")
     leia(resposta)
-    ate(resposta <> "s")
-    
+    ate(resposta = "s")
+    escreval("Ainda possui eleito para votar? (s)ou(n): ")
+    leia(resposta)
+    ate(resposta = "n")
+
 Fimalgoritmo
